@@ -5,4 +5,5 @@ F19 & r::Reload
 
 F19 & j::WinActivate "wslhost.exe"
 F19 & k::WinActivate "Firefox"
-F19 & i::WinActivate "Signal"
+F19 & q::WinActivate "Signal"
+F19 & i::WinActivate "Discord"
