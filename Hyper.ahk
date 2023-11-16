@@ -9,7 +9,8 @@ FocusOrLaunch(Program)
     WinActivate("ahk_exe " Program)
   }
   else {
-    Run("ahk_exe " Program)
+    Run(Program)
+    WinWait("ahk_exe" Program)
     WinActivate("ahk_exe " Program)
   }
 }
