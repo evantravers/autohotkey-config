@@ -5,15 +5,16 @@ F19 & r::Reload
 
 FocusOrLaunch(Program)
 {
-  if (WinExist(Program)) {
-    WinActivate Program
+  if (WinExist("ahk_exe " Program)) {
+    WinActivate("ahk_exe " Program)
   }
   else {
-    Run Program
+    Run("ahk_exe " Program)
+    WinActivate("ahk_exe " Program)
   }
 }
 
-F19 & j::FocusOrLaunch "wslhost.exe"
-F19 & k::FocusOrLaunch "Firefox"
-F19 & q::FocusOrLaunch "Signal"
-F19 & i::FocusOrLaunch "Discord"
+F19 & j::FocusOrLaunch "wezterm-gui.exe"
+F19 & k::FocusOrLaunch "firefox.exe"
+F19 & q::FocusOrLaunch "Signal.exe"
+F19 & i::FocusOrLaunch "Discord.exe"
