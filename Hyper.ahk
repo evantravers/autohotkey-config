@@ -9,8 +9,8 @@ FocusOrLaunch(Program)
     WinActivate("ahk_exe " Program)
   }
   else {
-    Run(Program)
-    WinWait("ahk_exe" Program)
+    Run(Program,,, &pid)
+    WinWait("ahk_pid" pid)
     WinActivate("ahk_exe " Program)
   }
 }
