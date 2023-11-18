@@ -15,7 +15,7 @@ FocusOrLaunch(Program)
   }
 }
 
-F19 & j::FocusOrLaunch "wezterm-gui.exe"
-F19 & k::FocusOrLaunch "firefox.exe"
-F19 & q::FocusOrLaunch "Signal.exe"
-F19 & i::FocusOrLaunch "Discord.exe"
+F19 & j::FocusOrLaunch "C:\Program Files\WezTerm\wezterm-gui.exe"
+F19 & k::FocusOrLaunch "C:\Program Files\Mozilla Firefox\firefox.exe"
+F19 & q::FocusOrLaunch "C:\Users\Tower\AppData\Local\Programs\signal-desktop\Signal.exe"
+F19 & i::FocusOrLaunch "C:\Users\Tower\AppData\Local\Discord\Update.exe --processStart Discord.exe"
