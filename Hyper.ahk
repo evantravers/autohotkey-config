@@ -10,13 +10,15 @@ FocusOrLaunch(Target, Program)
   }
   else {
     Run(Program,,, &pid)
-    WinWait("ahk_pid" pid)
-    WinActivate("ahk_exe " Program)
+    if WinWait("ahk_pid" pid)
+      WinActivate("ahk_exe " Program)
+    else
+      MsgBox "Timed out..."
   }
 }
 
 F19 & j::FocusOrLaunch "wezterm-gui.exe", "C:\Program Files\WezTerm\wezterm-gui.exe"
 F19 & k::FocusOrLaunch "firefox.exe", "C:\Program Files\Mozilla Firefox\firefox.exe"
-F19 & q::FocusOrLaunch "signal.exe", "C:\Users\Tower\AppData\Local\Programs\signal-desktop\Signal.exe"
+F19 & q::FocusOrLaunch "Signal.exe", "C:\Users\Tower\AppData\Local\Programs\signal-desktop\Signal.exe"
 F19 & i::FocusOrLaunch "Discord.exe", "C:\Users\Tower\AppData\Local\Discord\app-1.0.9024\Discord.exe"
 F19 & g::FocusOrLaunch "Obsidian.exe", "C:\Users\Tower\AppData\Local\Obsidian\Obsidian.exe"
