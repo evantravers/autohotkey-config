@@ -9,11 +9,7 @@ FocusOrLaunch(Target, Program)
     WinActivate("ahk_exe " Target)
   }
   else {
-    Run(Program,,, &pid)
-    if WinWait("ahk_pid" pid)
-      WinActivate("ahk_exe " Program)
-    else
-      MsgBox "Timed out..."
+    Run(Program)
   }
 }
 
