@@ -21,3 +21,16 @@ F19 & v::FocusOrLaunch "Figma.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Wi
 F19 & y::FocusOrLaunch "Morgen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Thunderbird.lnk"
 F19 & p::Run "https://chatgpt.com"
 F19 & h::Run "https://devdocs.io"
+F19 & ~;::toggleDarkMode()
+
+toggleDarkMode() {
+    static key := "", mode := 0
+    if (key == "") {
+        key := "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+        mode := Integer(RegRead(key, "SystemUsesLightTheme", ""))
+    }
+    mode := !mode
+    RegWrite(mode, "REG_DWORD", key, "AppsUseLightTheme")
+    RegWrite(mode, "REG_DWORD", key, "SystemUsesLightTheme")
+}
+
