@@ -19,7 +19,7 @@ i::FocusOrLaunch "Discord.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Window
 g::FocusOrLaunch "Obsidian.exe", "C:\Users\Tower\AppData\Local\Obsidian\Obsidian.exe"
 r::FocusOrLaunch "Toggl.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Toggl\Toggl Track.lnk"
 v::FocusOrLaunch "Figma.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Figma.lnk"
-y::FocusOrLaunch "Morgen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Thunderbird.lnk"
+y::FocusOrLaunch "Fantastical.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Fantastical.lnk"
 p::Run "https://chatgpt.com"
 +p::Run "https://claude.ai"
 h::Run "https://devdocs.io"
