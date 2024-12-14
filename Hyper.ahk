@@ -21,8 +21,9 @@ r::FocusOrLaunch "Toggl.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\
 v::FocusOrLaunch "Figma.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Figma.lnk"
 e::FocusOrLaunch "Thunderbird.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Thunderbird.lnk"
 y::FocusOrLaunch "Fantastical.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Fantastical.lnk"
+t::Run "obsidian://open?vault=wiki&file=templates%2Ftasks%2FToday"
 p::Run "https://chatgpt.com"
-+p::Run "https://claude.ai"
+!p::Run "https://claude.ai"
 h::Run "https://devdocs.io"
 ~;::toggleDarkMode()
 #HotIf
