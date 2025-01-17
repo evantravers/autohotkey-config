@@ -24,7 +24,6 @@ e::FocusOrLaunch "Thunderbird.exe", "C:\ProgramData\Microsoft\Windows\Start Menu
 y::FocusOrLaunch "Fantastical.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Fantastical.lnk"
 t::Run "obsidian://open?vault=wiki&file=templates%2Ftasks%2FToday"
 z::FocusOrLaunch "Zoom.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Zoom\Zoom Workplace.lnk"
-n::FocusOrLaunch "Standard Notes.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Standard Notes.lnk"
 p::Run "https://chatgpt.com"
 !p::Run "https://claude.ai"
 h::Run "https://devdocs.io"
