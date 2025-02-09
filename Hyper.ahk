@@ -13,7 +13,8 @@ FocusOrLaunch(Target, Program)
 
 #HotIf GetKeyState("F19")
 j::FocusOrLaunch "wezterm-gui.exe", "C:\Program Files\WezTerm\wezterm-gui.exe"
-k::FocusOrLaunch "zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen Browser.lnk"
+k::FocusOrLaunch "firefox.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Firefox.lnk"
++k::FocusOrLaunch "zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen Browser.lnk"
 q::FocusOrLaunch "Signal.exe", "C:\Users\Tower\AppData\Local\Programs\signal-desktop\Signal.exe"
 i::FocusOrLaunch "Discord.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk"
 !i::FocusOrLaunch "Slack.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc\Slack.lnk"
