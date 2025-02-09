@@ -13,7 +13,7 @@ FocusOrLaunch(Target, Program)
 
 #HotIf GetKeyState("F19")
 j::FocusOrLaunch "wezterm-gui.exe", "C:\Program Files\WezTerm\wezterm-gui.exe"
-k::FocusOrLaunch "firefox.exe", "C:\Program Files\Mozilla Firefox\firefox.exe"
+k::FocusOrLaunch "zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen Browser.lnk"
 q::FocusOrLaunch "Signal.exe", "C:\Users\Tower\AppData\Local\Programs\signal-desktop\Signal.exe"
 i::FocusOrLaunch "Discord.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk"
 !i::FocusOrLaunch "Slack.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Slack Technologies Inc\Slack.lnk"
@@ -24,8 +24,9 @@ e::FocusOrLaunch "Thunderbird.exe", "C:\ProgramData\Microsoft\Windows\Start Menu
 y::FocusOrLaunch "Fantastical.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Fantastical.lnk"
 t::Run "obsidian://open?vault=wiki&file=templates%2Ftasks%2FToday"
 z::FocusOrLaunch "Zoom.exe", "C:\Users\Tower\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Zoom\Zoom Workplace.lnk"
-p::Run "https://chatgpt.com"
-!p::Run "https://claude.ai"
+p::Run "https://claude.ai"
++p::Run "https://www.perplexity.ai"
+!p::Run "https://chatgpt.com"
 h::Run "https://devdocs.io"
 ~;::toggleDarkMode()
 #HotIf
