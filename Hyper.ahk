@@ -29,6 +29,7 @@ p::Run "https://claude.ai"
 +p::Run "https://www.perplexity.ai"
 !p::Run "https://chatgpt.com"
 h::Run "https://devdocs.io"
+n::Run "obsidian://adv-uri?vault=wiki&commandid=zk-prefixer"
 ~;::toggleDarkMode()
 #HotIf
 
