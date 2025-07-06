@@ -1,13 +1,22 @@
 ﻿#Requires AutoHotkey v2.0
 #SingleInstance Force
 
-FocusOrLaunch(Target, Program)
+FocusOrLaunch(Target, Program, Timeout := 10000)
 {
   if (WinExist("ahk_exe " Target)) {
     WinActivate("ahk_exe " Target)
   }
   else {
-    Run(Program)
+    try {
+      Run(Program)
+      ; Wait for the program to become available, then focus it
+      if (WinWait("ahk_exe " Target, , Timeout/1000)) {
+        WinActivate("ahk_exe " Target)
+      }
+    } catch as err {
+      ; Optional: Show error message if program fails to launch
+      ; MsgBox("Error launching " . Target . ": " . err.message)
+    }
   }
 }
 
